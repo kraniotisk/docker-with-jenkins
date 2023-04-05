@@ -17,7 +17,7 @@ node {
     stage('Push image') {
         /* Finally, we'll push the image into Docker Hub */
 
-        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-kkran') {
+        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-kkran2') {
             app.push("latest")
         }
     }
